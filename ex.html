@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function find(x) {
+
+        while (first < last) {
+            if (x[first] !== x[last]) return 0;
+            first++;
+            last--;
+        }
+        return 1;
+    }
+
+    var word = prompt("Nhap 1 tu");
+    var first = 0;
+    var last = word.length - 1;
+    find(word);
+    if (find(word) == 0) alert("khong phai");
+    else alert("phai");
+
+</script>
+</body>
+</html>
